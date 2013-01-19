@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @author qdyincl
  */
 public enum City {
-
+	
 	BEIJING("BJP", "北京"),
 
 	QINGDAO("QDK", "青岛");
