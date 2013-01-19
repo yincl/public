@@ -1,4 +1,4 @@
-package com.yincl.core;
+package com.yincl.query;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.Set;
  * @author qdyincl
  * @since 2013-01-16
  */
-public class ReqMsg {
+public class URL {
 	/**
 	 * 初始化参数
 	 */
@@ -87,7 +87,7 @@ public class ReqMsg {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		ReqMsg msg = new ReqMsg();
+		URL msg = new URL();
 		String url = msg.getUrl("BJP", "QDK", "2013-02-04");
 		System.out.println(url);
 

@@ -1,4 +1,4 @@
-package com.yincl.core;
+package com.yincl.query;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -9,11 +9,16 @@ import org.apache.log4j.Logger;
 
 import com.yincl.utils.SSLHttpClient;
 
-public class Query {
-	private static final Logger log = Logger.getLogger(Query.class);
+/**
+ * @todo   
+ * @author alex
+ * @since 2013-1-19
+ */
+public class TicketQuery {
+	private static final Logger log = Logger.getLogger(TicketQuery.class);
 
 	public static String doGet(String fromStation, String toStation, String date) throws Exception {
-		ReqMsg msg = new ReqMsg();
+		URL msg = new URL();
 		String url = msg.getUrl(fromStation, toStation, date);
 
 		log.info("请求URL:\n" + url);
@@ -26,11 +31,11 @@ public class Query {
 			/**
 			 * 获取代理请求
 			 */
-			HttpClient httpClient = new SSLHttpClient().getInstance("10.9.1.10", 8080);
+			HttpClient httpClient = new SSLHttpClient().getInstance();
 			HttpResponse response = httpClient.execute(httpGet);
 			HttpEntity entity = response.getEntity();
 			String rsp = EntityUtils.toString(entity);
-			
+
 			return rsp;
 		} finally {
 			httpGet.abort();
@@ -38,4 +43,7 @@ public class Query {
 
 	}
 
+	public void addCookie(String cookie) throws Exception {
+
+	}
 }
