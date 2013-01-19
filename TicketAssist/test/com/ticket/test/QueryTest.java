@@ -1,7 +1,7 @@
-package com.yincl.test;
+package com.ticket.test;
 
-import com.yincl.constants.City;
-import com.yincl.query.TicketQuery;
+import com.ticket.constants.City;
+import com.ticket.query.TicketQuery;
 
 public class QueryTest {
 	
