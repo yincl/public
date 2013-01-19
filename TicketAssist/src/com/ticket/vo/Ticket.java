@@ -1,4 +1,4 @@
-package com.yincl.vo;
+package com.ticket.vo;
 
 /**
  * @todo 火车票

@@ -1,4 +1,4 @@
-package com.yincl.utils;
+package com.ticket.utils;
 
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;

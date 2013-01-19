@@ -1,4 +1,4 @@
-package com.yincl.query;
+package com.ticket.query;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;

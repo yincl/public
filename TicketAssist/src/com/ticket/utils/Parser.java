@@ -1,4 +1,4 @@
-package com.yincl.utils;
+package com.ticket.utils;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 
-import com.yincl.vo.Ticket;
+import com.ticket.vo.Ticket;
 
 /**
  * @todo 车票信息解析类

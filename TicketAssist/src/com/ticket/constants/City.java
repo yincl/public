@@ -1,4 +1,4 @@
-package com.yincl.constants;
+package com.ticket.constants;
 
 import java.util.EnumSet;
 import java.util.Iterator;
