@@ -43,7 +43,7 @@ public class TicketQuery {
 
 	}
 
-	public void addCookie(String cookie) throws Exception {
-
+	public void addCookie(HttpGet get,String cookie) throws Exception {
+		get.setHeader(header)
 	}
 }
